@@ -1,0 +1,23 @@
+<div mat-dialog-title>Saga of {{user.login}}</div>
+
+<mat-dialog-content>
+  <div *ngIf="saga.length == 0">There is no Saga of {{user.login}}</div>
+  <div *ngIf="saga.length > 0">
+    <p>Lon, long time ago</p>
+    <div *ngFor="let tail of saga">
+      {{tail.name}} happends when
+      <ul class="list-group-item-text">
+        <li *ngFor="let item of tail.params | keyvalue">
+          {{item.key}}:{{item.value}}
+        </li>
+      </ul>
+    </div>
+  </div>
+</mat-dialog-content>
+
+<mat-dialog-actions>
+  <button mat-button type="button" class="btn btn-primary" mat-dialog-close>
+    Close
+  </button>
+</mat-dialog-actions>
+

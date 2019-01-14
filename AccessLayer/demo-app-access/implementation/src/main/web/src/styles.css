@@ -1,0 +1,17 @@
+/* You can add global styles to this file, and also import other style files */
+
+.admin{
+  border: 2px solid #20b2aa;
+  border-radius: 25px;
+}
+
+.user{
+  border: 2px solid #add8e6;
+  border-radius: 25px;
+}
+
+.active {
+  border: 1px solid #1d7971;
+  border-radius: 10px;
+}
+

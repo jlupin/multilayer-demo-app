@@ -1,0 +1,16 @@
+<div class="row clearfix">
+
+  <div class="col-md-4 pull-left">
+    <h4 class="list-group-item-heading">Event</h4>
+    <p class="list-group-item-text">{{eventView.name}}</p>
+  </div>
+  <div class="col-md-8 pull-right">
+    <h4 class="list-group-item-heading">Properties</h4>
+    <ul class="list-group-item-text">
+      <li *ngFor="let item of eventView.params | keyvalue">
+        {{item.key}}:{{item.value}}
+      </li>
+    </ul>
+  </div>
+
+</div>
