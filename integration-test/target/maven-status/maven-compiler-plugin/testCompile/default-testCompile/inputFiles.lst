@@ -1,0 +1,6 @@
+/home/koziolek/workspace/jlupin/incat-demo/integration-test/src/test/java/com/jlupin/bnk/demo/business/logic/layer/LedgerBlTest.java
+/home/koziolek/workspace/jlupin/incat-demo/integration-test/src/test/java/com/jlupin/bnk/demo/business/logic/layer/CustomerBlTest.java
+/home/koziolek/workspace/jlupin/incat-demo/integration-test/src/test/java/com/jlupin/bnk/demo/base/BaseTest.java
+/home/koziolek/workspace/jlupin/incat-demo/integration-test/src/test/java/com/jlupin/bnk/demo/data/layer/CustomerDlTest.java
+/home/koziolek/workspace/jlupin/incat-demo/integration-test/src/test/java/com/jlupin/bnk/demo/data/layer/LedgerDlTest.java
+/home/koziolek/workspace/jlupin/incat-demo/integration-test/src/test/java/com/jlupin/bnk/demo/business/logic/layer/StatisticsTest.java

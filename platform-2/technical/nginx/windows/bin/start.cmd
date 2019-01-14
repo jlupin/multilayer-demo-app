@@ -1,0 +1,22 @@
+@echo off
+
+SET BIN_PATH=%~dp0
+SET RUNDIR=%BIN_PATH%..\logs
+SET LOGDIR_TECH=%BIN_PATH%..\..\..\..\logs\technical
+SET LOGDIR_NGINX=%LOGDIR_TECH%\nginx\nginx
+
+CD /D %BIN_PATH%..\
+
+IF NOT EXIST %RUNDIR%\ (
+  MD %RUNDIR%
+)
+
+IF NOT EXIST %LOGDIR_TECH%\ (
+  MD %LOGDIR_TECH%
+)
+
+IF NOT EXIST %LOGDIR_NGINX%\ (
+  MD %LOGDIR_NGINX%
+)
+
+nginx.exe

@@ -1,0 +1,4 @@
+com/jlupin/bnk/demo/service/pojo/CustomerReadView.class
+com/jlupin/bnk/demo/service/interfaces/SearchCustomerService.class
+com/jlupin/bnk/demo/service/pojo/CustomerCreationView.class
+com/jlupin/bnk/demo/service/interfaces/CreateCustomerService.class

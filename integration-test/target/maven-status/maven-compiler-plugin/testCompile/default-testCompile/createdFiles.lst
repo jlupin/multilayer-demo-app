@@ -1,0 +1,6 @@
+com/jlupin/bnk/demo/base/BaseTest.class
+com/jlupin/bnk/demo/data/layer/CustomerDlTest.class
+com/jlupin/bnk/demo/data/layer/LedgerDlTest.class
+com/jlupin/bnk/demo/business/logic/layer/CustomerBlTest.class
+com/jlupin/bnk/demo/business/logic/layer/StatisticsTest.class
+com/jlupin/bnk/demo/business/logic/layer/LedgerBlTest.class

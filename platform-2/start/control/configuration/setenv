@@ -1,0 +1,10 @@
+## JLupin Next Server tries to determine JAVA_HOME automatically, set it manually if it fails.
+#JAVA_HOME=/opt/java
+
+## Java Options for Main Server
+JAVA_OPTS="-Dhttps.protocols=TLSv1.0,TLSv1.1,TLSv1.2 -Xms64M -Xmx512M"
+
+# Set custom path for local console configuration, if not specified default path is set
+#CONFIGURATION_FILE=
+# Set custom path for local console terminal commands history, if not specified default path is set
+#HISTORY_FILE=
