@@ -1,0 +1,56 @@
+verboseMode: true
+echoMode: false
+interactiveMode: true
+logging:
+  configuration: control/configuration/control.log4j2.xml
+script:
+  directory: control/script
+temp:
+  directory: control/temp
+repository:
+  default: local
+  definition:
+    local:
+      type: local
+      authType: none
+      path: ../upload
+#    remote:
+#      type: remote_http
+#      authType: none
+#      url: http://localhost/
+#      connectionTimeout: 1000
+#      readTimeout: 60000
+#    remoteWithAuth:
+#      type: remote_http
+#      authType: basic
+#      url: http://localhost/
+#      username: user
+#      password: password
+#      connectionTimeout: 1000
+#      readTimeout: 60000
+ssl:
+  client:
+    certificate: control/ssl/client/clientX509Certificate.crt
+    privateKey: control/ssl/client/clientPrivateKey.pk
+  server:
+    certificate: control/ssl/server/serverX509Certificate.crt
+dataPrinter:
+  display: plain_text
+  printHeaders: true
+  separator: ','
+events:
+  defaultListSize: 10
+  shortDescriptionMaxSize: 50
+node:
+  isSSL:             true
+  address:           127.0.0.1
+  transmissionPort:  9096
+  connectionTimeout: 1000
+  readTimeout:       300000
+peer:
+  jlrmcPort:         9090
+  queuePort:         9095
+  transmissionPort:  9096
+  informationPort:   9097
+  connectionTimeout: 1000
+  readTimeout:       300000

@@ -1,0 +1,9 @@
+STORAGE:
+  #absoluteRootPath: 'c:\\storage'
+  maxTasksAmountInSingleDirectory: 100
+  howOftenCheckingSubdirectoryInMillis: 5000
+  howOftenGenerateHealthCheckFileInMillis: 10000
+  takeControlOfAnotherQueueInMillis: 60000
+  howLongWaitToTakeControlOfOwnStorage: 60000
+  howOftenCheckAnotherHealthCheckFileInMillis: 10000
+  maxTimeToHoldNonUseDirectoriesInMilliseconds: 86400000

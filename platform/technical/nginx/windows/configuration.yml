@@ -1,0 +1,13 @@
+CONFIGURATION:
+  BASE:
+    name: nginx
+    type: nginx
+    readStreamsWaitTimeInMillis: 5000
+  OPERATIONS:
+    start: 'bin\\start.cmd'
+    stop: 'bin\\stop.cmd'
+    terminate: 'bin\\terminate.cmd'
+    reload: 'bin\\reload.cmd'
+  PARAMETERS:
+    waitAfterStopOperationTime: 6000
+    version: '1.5.0.4'

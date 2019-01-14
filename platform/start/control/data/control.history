@@ -1,0 +1,56 @@
+node start
+microservice upload queueMicroservice.zip 
+microservice upload channelMicroservice.zip 
+node sta
+node status 
+microservice list 
+microservice status 
+microservice status api-gateway 
+microservice details api-gateway 
+microservice details 
+microservice list 
+microservice details statistics 
+microservice list 
+microservice details customer-dl 
+microservice terminate customer-dl 
+microservice destroy customer-dl 
+node terminate 
+node start
+node status
+microservice upload queueMicroservice.zip 
+microservice upload channelMicroservice.zip 
+microservice start channelMicroservice 
+microservice start queueMicroservice 
+microservice list 
+microservice status 
+node start
+node status
+node peers
+microservice list 
+node peers
+microservice list 
+microservice upload webcontrol.zip 
+microservice start webcontrol 
+node terminate
+ll
+node start
+node status
+quit
+node start
+microservice upload queueMicroservice.zip 
+microservice list 
+microservice upload channelMicroservice.zip 
+microservice start queueMicroservice 
+microservice start channelMicroservice 
+exit
+node status
+node peers
+node terminate
+quit
+node status
+node peers
+qiot
+quit
+microservice upload webcontrol.zip 
+microservice start webcontrol 
+quit

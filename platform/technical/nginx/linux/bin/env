@@ -1,0 +1,8 @@
+#!/bin/bash
+
+workDir=`dirname $1`
+cd ${workDir} && cd ../
+prefix="`pwd`"
+
+nginxBin=${prefix}/sbin/nginx
+nginxConf=${prefix}/conf/nginx.conf

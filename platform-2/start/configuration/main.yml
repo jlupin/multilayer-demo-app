@@ -1,0 +1,243 @@
+ZONE:
+  name: default
+MAIN_SERVER:
+  name: NODE_2
+  location: DC1
+SERVERS:
+  JLRMC: #JLupin Remote Method Call Fast Protocol
+    port: 19090
+    readTimeout: 480000
+    waitForFinishExecuteAllRequests: true
+    waitToShutdownThreadsOnStop: 60000
+    backlog: 256
+    receiveBufferSize: 256
+    isReuseAddress: false
+    threadPoolSize: 128
+    logPeriodicOnDebug: true
+    destroyThreadOnTimeout: false
+    threadExecutingTimeOut: 240000
+    isStartOnMainServerInitialize: true
+    entryPoint: 'JLRMC'
+    SSL:
+      isSSL: false
+      isTwoWaySSLAuthentication: false
+      X.509.Format:
+        isActive: true
+        #search in path $SERVER_HOME$/server-resources/ssl/server
+        serverX509CertificateWithRSAPublicKeyFileName: 'serverX509Certificate.crt'
+        serverPKCS8EncodedWithRSAPrivateKeyFileName: 'serverPrivateKey.pk'
+        #clientsX509CertificateWithRSAPublicKeyDirectoryPath: 'C:/server/server-resources/ssl/client'
+  ELASTIC_HTTP:
+    port: 18082
+    readTimeout: 480000
+    waitForFinishExecuteAllRequests: true
+    waitToShutdownThreadsOnStop: 60000
+    backlog: 0
+    receiveBufferSize: 0
+    isReuseAddress: false
+    threadPoolSize: 64
+    logPeriodicOnDebug: true
+    destroyThreadOnTimeout: false
+    threadExecutingTimeOut: 240000
+    isStartOnMainServerInitialize: true
+    entryPoint: 'ELASTIC_HTTP'
+    SSL:
+      isSSL: false
+      isTwoWaySSLAuthentication: false
+      X.509.Format:
+        isActive: true
+        #search in path $SERVER_HOME$/server-resources/ssl/server
+        serverX509CertificateWithRSAPublicKeyFileName: 'serverX509Certificate.crt'
+        serverPKCS8EncodedWithRSAPrivateKeyFileName: 'serverPrivateKey.pk'
+        #clientsX509CertificateWithRSAPublicKeyDirectoryPath: 'C:/server/server-resources/ssl/client'
+  QUEUE:
+    port: 19095
+    readTimeout: 480000
+    waitForFinishExecuteAllRequests: true
+    waitToShutdownThreadsOnStop: 60000
+    backlog: 256
+    receiveBufferSize: 256
+    isReuseAddress: false
+    threadPoolSize: 128
+    logPeriodicOnDebug: true
+    destroyThreadOnTimeout: false
+    threadExecutingTimeOut: 240000
+    isStartOnMainServerInitialize: true
+    entryPoint: 'QUEUE'
+    SSL:
+      isSSL: false
+      isTwoWaySSLAuthentication: false
+      X.509.Format:
+        isActive: true
+        #search in path $SERVER_HOME$/server-resources/ssl/server
+        serverX509CertificateWithRSAPublicKeyFileName: 'serverX509Certificate.crt'
+        serverPKCS8EncodedWithRSAPrivateKeyFileName: 'serverPrivateKey.pk'
+        #clientsX509CertificateWithRSAPublicKeyDirectoryPath: 'C:/server/server-resources/ssl/client'
+  TRANSMISSION:
+    port: 19096
+    readTimeout: 480000
+    waitForFinishExecuteAllRequests: false
+    waitToShutdownThreadsOnStop: 60000
+    backlog: 0
+    receiveBufferSize: 0
+    isReuseAddress: false
+    threadPoolSize: 32
+    logPeriodicOnDebug: true
+    destroyThreadOnTimeout: false
+    threadExecutingTimeOut: 240000
+    isStartOnMainServerInitialize: true
+    entryPoint: 'TRANSMISSION'
+    SSL:
+      isSSL: true
+      isTwoWaySSLAuthentication: true
+      X.509.Format:
+        isActive: true
+        #search in path $SERVER_HOME$/server-resources/ssl/server
+        serverX509CertificateWithRSAPublicKeyFileName: 'serverX509Certificate.crt'
+        serverPKCS8EncodedWithRSAPrivateKeyFileName: 'serverPrivateKey.pk'
+        #clientsX509CertificateWithRSAPublicKeyDirectoryPath: 'C:/server/server-resources/ssl/client'
+  INFORMATION:
+    port: 19097
+    readTimeout: 480000
+    waitForFinishExecuteAllRequests: true
+    waitToShutdownThreadsOnStop: 60000
+    backlog: 0
+    receiveBufferSize: 0
+    isReuseAddress: false
+    threadPoolSize: 32
+    logPeriodicOnDebug: true
+    destroyThreadOnTimeout: false
+    threadExecutingTimeOut: 240000
+    isStartOnMainServerInitialize: true
+    entryPoint: 'INFORMATION'
+    SSL:
+      isSSL: false
+      isTwoWaySSLAuthentication: false
+      X.509.Format:
+        isActive: true
+        #search in path $SERVER_HOME$/server-resources/ssl/server
+        serverX509CertificateWithRSAPublicKeyFileName: 'serverX509Certificate.crt'
+        serverPKCS8EncodedWithRSAPrivateKeyFileName: 'serverPrivateKey.pk'
+        #clientsX509CertificateWithRSAPublicKeyDirectoryPath: 'C:/server/server-resources/ssl/client'
+  INFORMATION_HTTP:
+    port: 19098
+    readTimeout: 480000
+    waitForFinishExecuteAllRequests: true
+    waitToShutdownThreadsOnStop: 60000
+    backlog: 0
+    receiveBufferSize: 0
+    isReuseAddress: false
+    threadPoolSize: 32
+    logPeriodicOnDebug: true
+    destroyThreadOnTimeout: false
+    threadExecutingTimeOut: 240000
+    isStartOnMainServerInitialize: true
+    entryPoint: 'INFORMATION_HTTP'
+    SSL:
+      isSSL: false
+      isTwoWaySSLAuthentication: false
+      X.509.Format:
+        isActive: true
+        #search in path $SERVER_HOME$/server-resources/ssl/server
+        serverX509CertificateWithRSAPublicKeyFileName: 'serverX509Certificate.crt'
+        serverPKCS8EncodedWithRSAPrivateKeyFileName: 'serverPrivateKey.pk'
+        #clientsX509CertificateWithRSAPublicKeyDirectoryPath: 'C:/server/server-resources/ssl/client'
+ENTRY_POINTS:
+  JLRMC: #JLupin Remote Method Call Fast Protocol
+    isSilentErrorMessageMode: false
+    isSilentStackTraceMode: false
+    logPeriodicOnDebug: false
+  ELASTIC_HTTP:
+    isSilentErrorMessageMode: false
+    isSilentStackTraceMode: false
+    keepAliveOverNetProtocolTimeInMillis: 1000
+    checkKeepAlive: false
+    logPeriodicOnDebug: false
+    defaultSequenceName: jacksonParamArrayJsonInOutSequence
+    defaultApiId: ROA
+    simpleCORSEnabled: true
+  TRANSMISSION:
+    isSilentErrorMessageMode: false
+    isSilentStackTraceMode: false
+    logPeriodicOnDebug: false
+  INFORMATION:
+    isSilentErrorMessageMode: false
+    isSilentStackTraceMode: false
+    logPeriodicOnDebug: false
+  INFORMATION_HTTP:
+    isSilentErrorMessageMode: false
+    isSilentStackTraceMode: false
+    logPeriodicOnDebug: false
+    keepAliveOverNetProtocolTimeInMillis: 1000
+    checkKeepAlive: false
+  QUEUE:
+    logPeriodicOnDebug: false
+ENTRY_POINTS_SECURE_INFO:
+  isServerNameEnable: false
+INITIALIZING_LOGGER:
+  #directoryPath: 'c:/server/alternative_path/logs'
+  fileName: 'main_server_initialize'
+  fileExtension: 'log'
+  fileSizeInMB: 10
+  maxFiles: 10
+PROCESS_MANAGER:
+  isCheckAvailableOSMemoryOnMicroservicesStart: true
+  microservicesPortOffset: 22000
+  OS_PROCESSES_KEEPER:
+    isCheckOSProcessAlive: true
+    howOftenCheckingProcessInMillis: 5000
+    #logPath: 'c:/server/alternative_path/process_errors'
+  JVM_MEMORY_ERRORS_KEEPER:
+    isCheckMemoryErrors: true
+    howOftenCheckingProcessInMillis: 5000
+    #heapDumpPath: c:/server/restart_log/heap_dump
+    #logPath: 'c:/server/alternative_path/memory_errors'
+    #archiveLogPath: 'c:/server/alternative_path/memory_errors_archive
+    #restartLogPath: c:/server/restart_log/
+TECHNICAL_PROCESS_MANAGER:
+    isCheckOSProcessAlive: true
+    howOftenCheckingProcessInMillis: 5000
+    responseOSTimeToCheckProcessAliveInMillis: 30000
+EVENT_LOG_MANAGER:
+    howOftenCheckingExpireTimeInMillis: 20000
+    logExpireTimeInMillis: 120000
+    maximumSizeInMegabytes: 5
+MONITORING_MANAGER:
+    howOftenRefreshAllEnvironmentStateInMillis: 10000
+    isJMXEnable: true
+LOCK_MANAGER:
+    isTurnedOn: true
+MICROSERVICES_LOAD_BALANCER_SETTINGS:
+  singleRequestRepeatsAmount: 3
+  howOftenCheckingMicroservicesInMillis: 5000
+  externalHealthCheckPeriod: 4000
+  externalNodePeersStartCheckDelayInMillis: 5000
+  EXTERNAL_CONNECTIONS:
+    connectionSocketTimeoutInMillis: 1000
+    readTimeoutInMillis: 90000
+    isKeepAlive: false
+    isOOBInline: false
+    isTcpNoDelay: false
+    isReuseAddress: false
+    sendBufferSize: 0
+    receiveBufferSize: 0
+    soLinger: 0
+    trafficClass: 0
+PROPERTIES:
+  # 52428800 bytes = 50MB
+  maxRequestSizeInBytes: 52428800
+  maxResponseSizeInBytesDuringMicroserviceStart: 52428800
+  binaryProtocolBufferSizeInBytes: 8192
+NODE_PEERS:
+  NODE_2:
+    ip: '127.0.0.1'
+    jlrmcPort: 19090
+    queuePort: 19095
+    transmissionPort: 19096
+    informationPort: 19097
+  NODE_1:
+    ip: '127.0.0.1'
+    jlrmcPort: 9090
+    queuePort: 9095
+    transmissionPort: 9096
+    informationPort: 9097

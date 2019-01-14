@@ -1,0 +1,19 @@
+can not parse microservice id from microservice:customer-dl output stream, error details:com.jlupin.impl.util.exception.JLupinUtilException: can not find opening tag:[JLPIT]-[PROCESS_ID] and closing tag:[/PROCESS_ID]-[/JLPIT] in message:found APPLICATION section in configuration file and try create JLupinApplicationContainer by producer class:com.jlupin.bnk.demo.configuration.CustomerDlJLupinConfiguration
+[JLPIOST]-[PROCESS_INIT_ERROR]-[/JLPIOST]
+[JLPIOST]-[PROCESS_INIT_END_OF_STREAM]-[/JLPIOST] caused by:
+	at com.jlupin.impl.util.JLupinUtil.getValueFromJLNSMessage(JLupinUtil.java:76)
+	at com.jlupin.impl.manager.microserviceprocess.helper.process.JLupinProcessHelper.initOSProcess(JLupinProcessHelper.java:517)
+	at com.jlupin.impl.manager.microserviceprocess.helper.process.JLupinProcessHelper.initOSProcessAsMicroserviceAndDoOtherSequenceOperation(JLupinProcessHelper.java:103)
+	at com.jlupin.impl.manager.microserviceprocess.impl.base.JLupinBaseMicroserviceProcessManagerImpl.initOSProcessesAsMicroserviceAndDoOtherSequenceOperationByNamesInternal(JLupinBaseMicroserviceProcessManagerImpl.java:936)
+	at com.jlupin.impl.manager.microserviceprocess.impl.base.JLupinBaseMicroserviceProcessManagerImpl.startAllProcessesOnStartProcessInternal(JLupinBaseMicroserviceProcessManagerImpl.java:399)
+	at com.jlupin.impl.manager.microserviceprocess.impl.balancing.JLupinBalancingMicroserviceProcessManagerImpl.startAllProcessesOnStartProcess(JLupinBalancingMicroserviceProcessManagerImpl.java:123)
+	at com.jlupin.command.executor.main.loadstrategy.manager.JLupinMainServerLoadStrategyManager.loadAndStartConfiguration(JLupinMainServerLoadStrategyManager.java:147)
+	at com.jlupin.command.executor.main.JLupinMainServerCommandExecutor.startServersAndAllMicroservicesOnStartProcess(JLupinMainServerCommandExecutor.java:126)
+	at com.jlupin.command.interpreter.bytes.main.JLupinMainServerByteCommandInterpreter.doCommand(JLupinMainServerByteCommandInterpreter.java:67)
+	at com.jlupin.command.interpreter.text.main.JLupinMainServerTextCommandInterpreter.doCommand(JLupinMainServerTextCommandInterpreter.java:40)
+	at com.jlupin.starter.main.start.JLupinMainServerStarter.start(JLupinMainServerStarter.java:90)
+	at com.jlupin.starter.main.init.JLupinMainServerInitializer.main(JLupinMainServerInitializer.java:49)
+Caused by: java.lang.StringIndexOutOfBoundsException: String index out of range: -20
+	at java.lang.String.substring(String.java:1967)
+	at com.jlupin.impl.util.JLupinUtil.getValueFromJLNSMessage(JLupinUtil.java:74)
+	... 11 more

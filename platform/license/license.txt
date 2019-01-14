@@ -1,0 +1,175 @@
+USER LICENSE AGREEMENT
+JLUPIN PLATFORM ENTERPRISE EDITION
+dated as of 1 July 2018
+
+1. Definitions: 
+1.1.  “ACRL” – act of 4 act of 4 February 1994 on copyright and related rights (consolidated text Journal of Laws from 2016 item 666 as subsequently amended).
+1.2. “Application” – computer program in a form of Java application configured to be run on Software as an application.
+1.3. “Basic fee” – basic remuneration for License provided in License Order.
+1.4. “CLA” – individual Software license certificate issued to the specific License with an individual Licensee Key.
+1.5. “Distributor” - any natural person, legal person or other entity not having legal personality yet having legal capability, authorized to distribute and sublicense Software under ULA basing on a valid agreement with the Producer.
+1.6. “Full-Active Zone” - a Zone, in which all of the Nodes are ready to handle requests at the same time.
+1.7. “High Availability Scenario” – Software availability scenario determined basing on documentation or determined basing on high availability mechanisms of every hypothetical configuration with all Nodes being identified.
+1.8. “Disaster Recovery Scenario” – Software availability scenario determined basing on documentation resulting from documentation or determined basing on disaster recovery mechanisms of every hypothetical configuration with all Nodes identified.
+1.9. “License” – license agreement for the use of Software concluded between User and Producer or between User and Distributor. License may be granted as a Subscription or Indefinite-Period License.
+1.10. “License fee” – remuneration (price) due from User under License.
+1.11. “License Key”- individual code provided to each License by Producer in CLA.
+1.12. “License Order” – individual document with basic conditions and specification of License to use Software.
+1.13. “Licensing Unit” – the smallest, indivisible single title to use Software under License; One License Unit refers only to the use within single physical or virtual device.
+1.14. “Maintenance Service” – service rendered in respect to Software under SLA.
+1.15. “Node” - operation system with individual, external IP address, on which Software has been installed and is at least ready to run.
+1.16. “Package” – smallest, indivisible bundle of Licensing Units under a given Subscription consisting of eight Physical Cores or eight Virtual CPUs subject to Licensing.
+1.17. “Partially-Active Zone” - a Zone, in which none or more Nodes (having Software set as active) is handling all the requests, while the remaining Nodes are passive (having Software turned off).
+1.18. “Indefinite-Period License” - legal title to use Software under License for an indefinite period of time where User may order separate Licensing Units to use Software for License fee payable as specified in License Order. “Physical Core” – active (available on the hardware level), independent processing unit of CPU (Central Processing Unit) of computer device (eg. server), which reads and executes instructions of computer program.
+1.19. “Producer” - JLupin Software Studio spó³ka z ograniczon¹ odpowiedzialnoœci¹ with registered office in Kraków, Republic of Poland, ul. Profesora Micha³a ¯yczkowskiego 14, 31-864 Kraków, entered into register of entrepreneurs held by District Court for Kraków-Œrodmieœcie in Kraków XI Commercial National Court Register Division under number 0000518871, having VAT number 6751508699;
+1.20. “QA Environment” – a set of Nodes in non-production environments, directly involved in the software release process, used for testing purposes (functional, performance, compliance and security).
+1.21. “SLA” – service level agreement of Software; general terms and conditions of Maintenance Service for Software – an appendix to the License Order.
+1.22. “Software” - all versions 1.x of “JLupin Platform Enterprise Edition” (“JLP EE”) also known as “JLupin Next Server Enterprise Edition” software including all its modules, add-ons, updates, upgrades, corrections, security advisories and bug fixes, provided that they remain within version 1.x; in particular a computer program under article 74 paragraph 1 ACRL; to avoid discrepancies the term “Software” does not refer to versions other than 1.x. The provisions of 4.12 and 4.13 however apply only to JLP EE starting from 1.5.x.
+1.23. “Subscription” – legal title to use Software under License within the specific parameters and scope ordered by the User (Packages), for License fee and along with corresponding maintenance and Maintenance Service provided merely by Producer. 
+1.24. “User” – any natural person, legal person or other entity not having legal personality yet having legal capability, using Software under License; the licensee of the Software.
+1.25. “ULA” – this document with all its annexes, appendixes and further amendments.
+1.26. “Virtual CPU” – virtual processing unit, which reads and executes instructions of computer program, assigned by the hypervisor, running directly under the operating system layer. 
+1.27. “Zone” – two or more Nodes configured with the same value of ZONE: name (section “ZONE”, position “name”) parameter.
+
+2. Representations of the Producer
+2.1. Producer is the exclusive and sole owner of all economic copyrights, database producer's rights, trademarks, utility models, industrial designs and patents contained in Software and all materials and elements related to Software, including manuals, documentation and presentations.
+2.2. Software and all materials and elements related to Software do not infringe upon third-party rights, are not be encumbered with any third party rights and there are no any such rights in Software, that could hinder or limit the use of the Software within the scope of License.
+2.3. The Software may contain non-essential licensed third party content which does not affect License and the use of Software thereunder and to which representations in sections 2.1 do not apply.
+
+3. Licensing
+3.1. Within the terms and conditions of this ULA, the License may be concluded in the following distribution models:
+3.1.1.  License concluded between Producer and User
+3.1.2.  License (sublicense) concluded between Distributor and User.
+3.2. In case the License is granted by Distributor under section 3.1.2., wherever this ULA provides performance only by Producer without concurrent reference to Distributor, it shall be deemed that such clause provides for a Distributor’s obligation (guarantee) that the Producer shall perform in full towards the User within the License and the User’s legal title to exercise such performance from Producer within the License.
+3.3. In case the License is granted by Distributor under section 3.1.2., wherever this ULA provides obligations or performances of the User towards Producer, without concurrent reference to Distributor, it shall be deemed that – depending of the nature of such obligation or performance - such clause provides for a User’s obligation towards Distributor or a User’s obligation towards Distributor (guarantee) that the User shall perform in full towards the Producer within the License and Distributor’s and Producer’s legal titles to independently exercise such performance from the User within the License.
+3.4. Software may be downloaded by the User at any time from Producer’s website or Producer-certified website.
+3.5. The mere Software download does not constitute a License under this ULA, however Producer grants the User a limited, non-exclusive and free-of-charge license to download and save Software on any computer device, which is unlimited in time.
+3.6. License referred in 3.5 terminates once Software process is completed on condition that the User has completed procedure referred in 3.7.
+3.7. A valid and binding License requires the User to:
+3.7.1. obtain Producer’s authorization to download, install and run the Software,
+3.7.2. read and accept ULA and SLA,
+3.7.3. sign License Order by Producer and User,
+3.7.4. obtain License Key from Producer in CLA,
+3.7.5. confirm and accept terms and conditions of this ULA by selecting appropriate option during first downloading process of the Software.
+3.8. Authorization referred in section 3.7.1. requires User to register within downloading system provided by Producer available at https://jlupin.io.
+3.9. A valid and binding License consists of:
+3.9.1. License Order duly signed by Producer and User or Distributor and User in two counterparts,
+3.9.2. ULA attached to License Order as annex,
+3.9.3. SLA attached to License Order as annex,
+3.9.4. CLO issued by Producer and delivered to User or attached to Purchase Order as annex; Producer shall deliver CLO to the User within 21 days from conclusion of the License (from the date both parties signed License Order) at the latest.
+3.10. Documents mentioned in section 3.9.1 and 3.9.4. require written form or else shall be null and void.
+3.11. Should the user fail to comply with provisions of sections 3.8-3.10 the License shall be null and void.
+3.12. License contains Subscriptions in Packages or comes as an Indefinite-Period License. As per Subscription each Package is indivisible. Within Indefinite-Period License User may order separate Licensing Units.
+3.13. Prior to entering into License (conclusion of license agreement), the User may use software for 60 days of trail period under Trial License.
+3.14. The User enters into Trial License automatically by accepting ULA during Software downloading process without having appropriate coverage of production environments by Subscriptions or Indefinite-Period License. 
+3.15. Trial License is concluded exclusively between Producer and the User.
+3.16. The Use of Software under Trial License is for evaluation, non-production purposes only i.e. to test Software, to verify Software’s development features and to present Software; In particular it is forbidden to use Software in production environment under Trial License.
+3.17. Trial License is free of charge; The provisions of section 7 shall not apply.
+3.18. Producer does not provide Maintenance Service for Software under Trial Service; The provisions of section 11 shall not apply.
+3.19. User may terminate Trial License at any time with an immediate effect and with no prior notice.
+3.20. Producer may terminate Trial License at any time with an immediate effect and with no prior notice.
+3.21. On termination of Trial License, in particular with the lapse of 60-day Trial License period, Trial License expires and the user shall permanently uninstall and delete the Software.
+3.22. Trial License expires once the Software is used in production environment.
+3.23. Trial License expires once the User obtains the License. 
+3.24. Any use of Software, including leaving its installation files, beyond 60-day Trial License period shall constitute infringement upon Producer’s copyrights.
+3.25. The provisions of sections 3.4 and 3.5 shall apply to Trial License.
+3.26. Other provisions of this ULA shall apply respectively to Trial License, unless they remain at variance with the above sections 3.13-3.25. The above sections 3.13-3.25 shall prevail in case of any discrepancies between the purpose and scope of Trial License and allowed forms of use of the Software under Trial License and the remaining provisions of ULA.
+
+4. Intended and allowable use of Software
+4.1. User may use Software in accordance to this License:
+4.1.1. develop and run Applications,
+4.1.2. for both production and non-production purposes
+4.1.3. in production and non-production environments as well as in QA Environments,
+4.1.4. for both commercial and non-commercial purposes,
+4.1.5. in an Full-Active Zone form or in Partially-Active Zone as well as a standalone Node. 
+4.2. Under this License, the User may only use the Software:
+4.2.1. in accordance to ULA ,
+4.2.2. with respect to the number of Physical Cores or alternatively, but not jointly Virtual CPUs covered by the Subscription within a single or multiple Packages.
+4.3. The License is binding and valid only if all conditions referred in section 4.1 are met at the same time by the User.
+4.4. User determines initial Subscription at the conclusion of the License in License Order.
+4.5. The License  shall provide at least the minimum number of Physical Cores of any device, which is necessary for running Software in High Availability Scenario or Disaster Recovery Scenario.
+4.6. The License shall provide at least the minimum number of Virtual CPUs of any virtual servers, which is necessary for running Software in High Availability Scenario or Disaster Recovery Scenario.
+4.7. Should the Software be used in production environments and QA Environments
+4.7.1. the License shall cover all Nodes,
+4.7.2. Nodes in Zone shall have the same level of License.
+4.8. Producer provides the following levels of License: 
+4.8.1. Basic - recommended for non-production environments,,
+4.8.2. Production - recommended for production environments.
+4.9. User may choose to operate under only one Subscription models given in sections 4.5 and 4.6 or Indefinite-Period License at one time for a given set of Nodes.
+4.10. The Subscription or Indefinite-Period License for production environments shall be used at least in four Physical Cores per device or at least in two Virtual CPUs per virtual server; The Subscription or Indefinite-Period License for non-production environments shall be used at least in two Physical Cores per device or at least in two Virtual CPUs per virtual server. 
+4.11. User may at any time change Subscription, however such change shall not lead to Subscription narrower than referred in sections 4.4- 4.6 and 4.10.
+4.12. Subscription or Indefinite-Period License for production environments and QA Environments allows the User to use the Software on corresponding development environments (with the same set of applications) with unlimited number of Physical Cores or Virtual CPUs.
+4.13. User is allowed to converse every 4 License Units for Virtual CPUs into 5 License Units for Physical Cores and every 5 Licensing Units for Physical Cores into 4 Licensing Units for Virtual CPUs. Such conversion may occur at the end of every License year upon User's notice given to the Producer at least 2 weeks before the conclusion of License year. The Producer shall issue certifications for such conversions.  The conversion is allowed only if all License Units are awarded the same level of Maintenance services (Basic or Production) according to SLA.
+4.14. User may use Software in virtual environment within resource pool calculated as the product of the number of licensed Physical Cores (under active Subscription or  Indefinite-Period License) for all server cores that is used by Software in every High Availability Scenario and Disaster Recovery Scenario multiplied by clock signal of those cores. Exceeding the resource pool shall be construed as exceeding the scope of the License.
+4.15. The License is non-transferable for User under any circumstances.
+4.16. Under this License, the User is not entitled to grant any sublicenses, regardless of their purpose and scope, unless a separate consent from Producer is obtained.
+
+5. Character and scope of License
+5.1. Without prejudice to the provisions of section 4, this ULA grants User a non-exclusive license to use Software by:
+5.1.1. saving Software (fixation of Software) on User’s computers, portable storage device and CD’s without reproducing Software, unless reproduction is made for backup purposes only,
+5.1.2. running Software on User’s computer,
+5.1.3. public presentation of running Software by any means including public display and Internet, both on-demand and streaming.
+5.2. The License is worldwide and is granted for a definite period of time set in License Order.
+5.3. The User is entitled to:
+5.3.1. extend (without modifying the Software itself) the functionality of the Software within the meaning of object-oriented programming (inheritance, polymorphism, composition),
+5.3.2. attach external ?les to Software in .jar, .xml or properties ?les, uploaded via classloaders and produced by the Software as independent Applications.
+5.4. The License does not encompass third party libraries and runtime of the Software, as this elements shall maintain licensed under which they have been issued and shall not be considered as part of the Software. Provisions of section 2.3 shall apply.
+
+6. License restrictions
+6.1. The User shall not:
+6.1.1. translate, adapt, change the layout or make any other changes in Software,
+6.1.2. use Software for any obscene, offensive, hatred, abusive or pornographic content in any form, whether encrypted or non-encrypted,
+6.1.3. decompile Software source code,
+6.1.4. copy any part of Software, including its code, regardless of its purpose, unless such copying is specifically permitted by ULA or the User has obtained a separate, written consent from Producer,
+6.1.5. crack or evade security, blocking and monitoring mechanisms used by Producer in Software in order to ensure its use in accordance with License,
+6.1.6. infringe upon the License in any other manner.
+6.2. Should the User fail to comply with any of the provisions referred to in section 6.1, Producer shall be entitled to terminate the License with an immediate effect.
+6.3. Termination of License referred to in section 6.2 does not requires any specific form.
+
+7. License Fees
+7.1. License Fee shall be determined in License Order.
+7.2. The License Fee covers all Subscriptions or an Indefinite-Period License chosen in License Order.
+7.3. The User agrees to accept electronic invoices without signatures and to have such invoices delivered by email
+
+8. Liability and safety measures
+8.1. Producer or Distributor shall bear no liability for any damages resulting from the installation, rollout, running, monitoring and any other issues related to Software use.
+8.2. Producer and Distributor provides no warranty for the appropriate and full operation of Software, also meaning that the License excludes implied (statutory) warranty for any defects of the software .
+8.3. The User shall bear full liability for installation, running, operation, supervising, managing and controlling of the Software use as well as for the results of the Software operation in particular for:
+8.3.1. damages or losses caused by Software,
+8.3.2. the selection of the Software in order to achieve the planned results,
+8.3.3. determining proper manners of the Software use and the results of Software operation,
+8.3.4. establishing su?cient independent procedures for verifying the Software precision,
+8.3.5. the results of Software operation, 
+8.3.6. prevention against data loss due to Software breakdown or other Software defects.
+8.4. In order to use Software under License, the User shall ensure to implement proper measures and procedures to maintain the level of protection against circumstances referred to in section 8.3.1-8.3.6 required and justified in the Users activity for which the Software is intended to be used.
+8.5. The provisions of this section 7 does not preclude any of the provisions of SLA.
+
+9. Security and monitoring mechanisms 
+9.1. Producer may include various security mechanisms in Software in order to monitor technical aspects of its use as well as to ensure the use of Software in accordance with the License.
+9.2. Producer may use blocking mechanisms and copyright management system or other license management applications for controlling the access and the use of Software in accordance with License.
+
+10. Commercial trainings, certification and assistance
+10.1. Without prior written consent of Producer, the User shall not undertake or become involved in any way in commercial trainings and certification for Software operation.
+10.2. Without prior written consent of Producer, the User shall not undertake or become involved in commercial services for installation, rollout or configuration of Software.
+
+11. Producer’s support
+11.1. Maintenance Service for Software is provided by Producer in accordance to SLA.
+11.2. SLA is provided at no additional costs.
+
+
+12. Disclaimer
+12.1. Software is a tool intended to be used by quali?ed professionals only.
+12.2. Software shall not substitute a professional evaluation or independent physical tests of prototypes with respect to the product load, security and usability. 
+
+13. Final provisions
+13.1. The software is intended for entrepreneurs only, however to avoid any possible discrepancies, Producer hereby declare that none of the provisions of this ULA or License as such shall not be interpreted or recognized as violating upon consumer rights. Should ULA or the License be contradict to the provisions of consumer laws, these provisions shall prevail, especially in respect to implied (statutory) warranty and jurisdiction.
+13.2. Producer may terminate the License at any time, with an immediate effect, without prior notice if:
+13.2.1. the User, in any way, violates upon the purpose and scope of License or the use of Software,
+13.2.2. the User is in default with License Fee for period longer than one month
+13.3. The provisions of section 13.2 shall apply respectively to License concluded between Distributor and User in accordance with section 3.1.2, meaning that both Producer and the User have the right to exercise the right to terminate the License.
+13.4. The User may terminate the License at any time with prior notice of two weeks if the Software is unavailable due to the real and confirmed Priority 1 report circumstances, not resolved pursuant to SLA for a period longer than two weeks.
+13.5. The User hereby agrees for the change of the licensing party under this License, from Distributor to Producer or Producer-appointed company, namely JLupin Software Studio Business Solution z ograniczon¹ odpowiedzialnoœci¹ with registered office in Kraków, Republic of Poland. 
+13.6. The change referred to in section 13.3 may be executed at any time at the discretion of Producer or Producer-appointed company, namely JLupin Software Studio Business Solution z ograniczon¹ odpowiedzialnoœci¹ with registered office in Kraków, Republic of Poland and require notification made to the User by any party.
+13.7. The User confirms to have become fully acquainted with ULA and SLA and all their appendixes, annexes and amendments prior to signing the Agreement and that they are fully accepted.
+13.8. All disputes arising out of or relating to ULA or License shall be govern by a Polish courts with jurisdiction at Producer’s registered office pursuant to Polish Code of Civil Procedure.
+13.9. The License, including this ULA, shall be govern by and construed in accordance with the laws of the Republic of Poland.

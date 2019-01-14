@@ -1,0 +1,1 @@
+{"version":3,"file":"customer-read-view.model.js","sourceRoot":"","sources":["../../../../../src/app/user/user-list/customer-read-view.model.ts"],"names":[],"mappings":"AAAA;IAME,0BAAY,QAAgB,EAAE,KAAa,EAAE,IAAY;QACvD,IAAI,CAAC,QAAQ,GAAG,QAAQ,CAAC;QACzB,IAAI,CAAC,KAAK,GAAG,KAAK,CAAC;QACnB,IAAI,CAAC,IAAI,GAAG,IAAI,CAAC;IACnB,CAAC;IACH,uBAAC;AAAD,CAAC,AAXD,IAWC"}

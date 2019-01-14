@@ -1,0 +1,31 @@
+## JLupin tries to determine JAVA_HOME automatically, set it manually if it fails.
+#JAVA_HOME=/opt/java
+
+## Java Options for Main Server
+JAVA_OPTS="-Dhttps.protocols=TLSv1.0,TLSv1.1,TLSv1.2 -Xms128M -Xmx256M"
+
+## Server out for Main Server (initial logs from startup process)
+# For LINUX
+SERVER_OUT="logs/server/main/start/server.out"
+# For WINDOWS (applicable only if Windows Service is used to manage JLupin)
+WINDOWS_SERVER_OUT=logs\server\main\start\server.out
+
+## Windows service configuration
+# You can change created service name
+#SERVICE_NAME="JLupinPlatformService
+
+## Logging options for Main Server, available values:
+# - ERROR
+# - WARN
+# - INFO (default)
+# - DEBUG
+LOG_LEVEL=INFO
+
+## Debug mode options
+DEBUG_PORT=12998
+DEBUG_OPTS="-agentlib:jdwp=transport=dt_socket,server=y,suspend=n"
+
+## JMX configuration
+JMX_ENABLED=yes
+JMX_PORT=9010
+JMX_OPTS="-Dcom.sun.management.jmxremote.local.only=false -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false"
