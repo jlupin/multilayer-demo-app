@@ -1,0 +1,21 @@
+<div class="lead">
+  <p>This component show th <kbd> API Composition</kbd> pattern. We use both
+    endpoints to get data.</p>
+</div>
+
+<div class="col-md-12">
+
+
+  <input (keyup)="findUsers(userNameInput)" placeholder="User login"
+         #userNameInput/>
+
+  <div
+    *ngFor="let user of users | paginate: {
+    id: 'pag-users',
+    itemsPerPage: 5,
+    currentPage: currentPage
+    }"
+    (click)="openUserDialog(user)" class="lead">{{user.login}}</div>
+  <pagination-controls id="pag-users"
+                       (pageChange)="currentPage = $event"></pagination-controls>
+</div>

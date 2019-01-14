@@ -1,0 +1,51 @@
+<div class="row">
+  <div class="col-md-4">
+    <button (click)="readEvents()" class="btn btn-primary">Read Event Stream
+    </button>
+  </div>
+  <div class="col-md-4" *ngIf="showUnsub">
+    <button (click)="stopEvents()" class="btn btn-danger">Stop Event Stream
+    </button>
+  </div><div class="col-md-4" [ngClass]="{'col-md-offset-4': !showUnsub }">
+    <button (click)="resetCounters()" class="btn btn-info">Reset counters
+    </button>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-3">
+    Event name:
+  </div>
+  <div class="col-md-9" [ngSwitch]="lastEventName">
+    <div class="row" *ngSwitchCase="'CreateCustomerRequestEvent'">
+      <div class="col-md-3 active">Create Customer Request {{ccr}}</div>
+      <div class="col-md-3">Create Customer {{cc}}</div>
+      <div class="col-md-3">Save Customer {{sc}}</div>
+      <div class="col-md-3">Register Customer {{rc}}</div>
+    </div>
+    <div class="row" *ngSwitchCase="'CreateCustomerEvent'">
+      <div class="col-md-3">Create Customer Request {{ccr}}</div>
+      <div class="col-md-3 active">Create Customer  {{cc}}</div>
+      <div class="col-md-3">Save Customer {{sc}}</div>
+      <div class="col-md-3">Register Customer {{rc}}</div>
+    </div>
+    <div class="row" *ngSwitchCase="'SaveCustomerEvent'">
+      <div class="col-md-3">Create Customer Request {{ccr}}</div>
+      <div class="col-md-3">Create Customer  {{cc}}</div>
+      <div class="col-md-3 active">Save Customer {{sc}}</div>
+      <div class="col-md-3">Register Customer {{rc}}</div>
+    </div>
+    <div class="row" *ngSwitchCase="'RegisterCustomerEvent'">
+      <div class="col-md-3">Create Customer Request {{ccr}}</div>
+      <div class="col-md-3">Create Customer  {{cc}}</div>
+      <div class="col-md-3">Save Customer {{sc}}</div>
+      <div class="col-md-3 active">Register Customer {{rc}}</div>
+    </div>
+    <div class="row" *ngSwitchDefault>
+      <div class="col-md-3">Create Customer Request {{ccr}}</div>
+      <div class="col-md-3">Create Customer  {{cc}}</div>
+      <div class="col-md-3">Save Customer {{sc}}</div>
+      <div class="col-md-3">Register Customer {{rc}}</div>
+    </div>
+  </div>
+</div>

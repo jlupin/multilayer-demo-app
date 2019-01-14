@@ -1,0 +1,43 @@
+<div class="row">
+  <div class="col-md-3">
+    <p>
+      <button class="btn btn-primary"
+              (click)="startGenerate()"
+              mat-raised-button
+              matTooltip="Start generating random customers"
+              aria-label=""
+      >Start generator
+      </button>
+    </p>
+  </div>
+  <div class="col-md-3">
+    <p>
+      <button class="btn btn-secondary"
+              mat-raised-button
+              matTooltip="Generate single customer"
+              aria-label=""
+              (click)="generateSingle()">Generate single
+      </button>
+    </p>
+  </div>
+  <div class="col-md-3">
+    <p>
+      <button class="btn btn-danger"
+              (click)="stopGenerator()">Stop generator
+      </button>
+    </p>
+  </div>
+</div>
+
+
+<div *ngIf="currentUser != null">
+  <h4>current user is</h4>
+  <div class="row">
+    <div class="col-md-6">login:</div>
+    <div class="col-md-6">{{currentUser.login}}</div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">type:</div>
+    <div class="col-md-6">{{currentUser.type}}</div>
+  </div>
+</div>

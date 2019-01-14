@@ -1,0 +1,20 @@
+# Instrukcja dla prowadzącego
+
+## TL;DR
+
+Kolejne kroki na potrzeby prezentacji i demo technicznego JLupina. 
+
+* Omówic środowisko, czyli mamy dwie instancje na pierwszej jest front, kolejki i kanały, a na drugim backend.
+* Omówić strukturę projektu parent pom, spring bota, zwrócić uwagę na konfigurację pluginu jlupina
+* Uruchomić oba nody
+* Załadować µserwisy kolejek i kanałów. 
+* Z projektu `configuration` przerzucić konfigurację kolejek i kanałów (nazewnictwo jest ważne).
+* Uruchmić usługi kolejek i kanałów.
+* Puścić instalację reszty usług przez `mvn clean install`.
+* Czym są usługi serwletowe na przykładzie `api-gateway`
+* Pokazać wywołanie synchroniczne i kolejkowe `CudCustomerController.createCustomer`
+* Pokazać konfigurację na przykładzie `ApiGatewaySpringConfiguration`
+* UWAGA na dwa różne `JLupinDelegator`
+* Pokazać jak wygląda `CreateCustomerServiceImpl`
+* Rozrzucanie ruchu do wielu kolejek
+*  

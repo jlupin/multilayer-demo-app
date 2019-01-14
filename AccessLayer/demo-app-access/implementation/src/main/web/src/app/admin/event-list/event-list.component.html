@@ -1,0 +1,19 @@
+<div class="row">
+  <div class="col-xs-12">
+    <button class="btn btn-success" (click)="loadEvents()">Load Events</button>
+  </div>
+</div>
+<hr/>
+<div class="row">
+  <div class="col-md-12">
+
+    <app-event-item *ngFor="let ev of eventViews | paginate: {
+    id: 'pag-events',
+    itemsPerPage: 5,
+    currentPage: currentPage
+    }"
+                     [eventView]="ev"></app-event-item>
+    <pagination-controls (pageChange)="currentPage = $event" id="pag-events"></pagination-controls>
+  </div>
+</div>
+
