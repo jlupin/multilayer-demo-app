@@ -8,6 +8,7 @@ var UserDetailsComponent = /** @class */ (function () {
     }
     UserDetailsComponent.prototype.ngOnInit = function () {
         this.user = this.data.user;
+        this.saga = this.data.saga;
     };
     UserDetailsComponent = tslib_1.__decorate([
         Component({

@@ -1,11 +1,13 @@
 package com.jlupin.bnk.demo.configuration;
 
+import com.jlupin.bnk.demo.service.interfaces.SearchCustomerService;
 import com.jlupin.impl.client.util.JLupinClientUtil;
 import com.jlupin.impl.client.util.channel.JLupinClientChannelIterableProducer;
 import com.jlupin.bnk.demo.service.interfaces.StatsCollectorService;
 import com.jlupin.interfaces.client.delegator.JLupinDelegator;
 import com.jlupin.interfaces.common.enums.PortType;
 import com.jlupin.interfaces.microservice.partofjlupin.asynchronous.service.channel.JLupinChannelManagerService;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -23,7 +25,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 })
 @EnableWebFlux
 public class AdminGatewaySpringConfiguration {
-	@Bean
+	@Bean("JlrmcJLupinDelegator")
 	public JLupinDelegator getJLupinDelegator() {
 		return JLupinClientUtil.generateInnerMicroserviceLoadBalancerDelegator(PortType.JLRMC);
 	}
@@ -42,6 +44,15 @@ public class AdminGatewaySpringConfiguration {
 	public JLupinClientChannelIterableProducer getJLupinClientChannelIterableProducer(JLupinChannelManagerService jLupinChannelManagerService) {
 		return new JLupinClientChannelIterableProducer(jLupinChannelManagerService);
 	}
+
+	@Bean(name = "searchCustomerService")
+	public SearchCustomerService searchCustomerService(
+			@Qualifier("JlrmcJLupinDelegator")
+					JLupinDelegator jLupinDelegator
+	) {
+		return JLupinClientUtil.generateRemote(jLupinDelegator, "customer-bl", SearchCustomerService.class);
+	}
+
 }
 
 @Configuration

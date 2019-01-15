@@ -1,5 +1,4 @@
 com/jlupin/bnk/demo/dao/pojo/CreateCustomerRequestEvent.class
-com/jlupin/bnk/demo/service/impl/StatsCollectorServiceImpl$1.class
 com/jlupin/bnk/demo/configuration/StatisticsJLupinConfiguration.class
 com/jlupin/bnk/demo/dao/pojo/RegisterCustomerEvent.class
 com/jlupin/bnk/demo/configuration/StatisticsSpringConfiguration.class

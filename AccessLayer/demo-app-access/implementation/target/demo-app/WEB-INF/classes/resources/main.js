@@ -41,7 +41,7 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<h3 class=\"text-center\">\n  Admin GUI - Admin Gateway\n</h3>\n<div class=\"lead\">\n  <p>This side of page represents access to <kbd>admin-gateway</kbd> controllers.</p>\n</div>\n<app-stats></app-stats>\n<app-event-list></app-event-list>\n"
+module.exports = "<h3 class=\"text-center\">\n  Admin GUI - Admin Gateway\n</h3>\n<div class=\"lead\">\n  <p>This side of page represents access to <kbd>admin-gateway</kbd> controllers.</p>\n</div>\n<app-stats></app-stats>\n"
 
 /***/ }),
 
@@ -297,7 +297,7 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"row\">\n  <div class=\"col-md-4\">\n    <button (click)=\"readEvents()\" class=\"btn btn-primary\">Read Event Stream\n    </button>\n  </div>\n  <div class=\"col-md-4\" *ngIf=\"showUnsub\">\n    <button (click)=\"stopEvents()\" class=\"btn btn-danger\">Stop Event Stream\n    </button>\n  </div><div class=\"col-md-4\" [ngClass]=\"{'col-md-offset-4': !showUnsub }\">\n    <button (click)=\"resetCounters()\" class=\"btn btn-info\">Reset counters\n    </button>\n  </div>\n</div>\n\n<div class=\"row\">\n  <div class=\"col-md-3\">\n    Event name:\n  </div>\n  <div class=\"col-md-9\" [ngSwitch]=\"lastEventName\">\n    <div class=\"row\" *ngSwitchCase=\"'CreateCustomerRequestEvent'\">\n      <div class=\"col-md-3 active\">Create Customer Request {{ccr}}</div>\n      <div class=\"col-md-3\">Create Customer {{cc}}</div>\n      <div class=\"col-md-3\">Save Customer {{sc}}</div>\n      <div class=\"col-md-3\">Register Customer {{rc}}</div>\n    </div>\n    <div class=\"row\" *ngSwitchCase=\"'CreateCustomerEvent'\">\n      <div class=\"col-md-3\">Create Customer Request {{ccr}}</div>\n      <div class=\"col-md-3 active\">Create Customer  {{cc}}</div>\n      <div class=\"col-md-3\">Save Customer {{sc}}</div>\n      <div class=\"col-md-3\">Register Customer {{rc}}</div>\n    </div>\n    <div class=\"row\" *ngSwitchCase=\"'SaveCustomerEvent'\">\n      <div class=\"col-md-3\">Create Customer Request {{ccr}}</div>\n      <div class=\"col-md-3\">Create Customer  {{cc}}</div>\n      <div class=\"col-md-3 active\">Save Customer {{sc}}</div>\n      <div class=\"col-md-3\">Register Customer {{rc}}</div>\n    </div>\n    <div class=\"row\" *ngSwitchCase=\"'RegisterCustomerEvent'\">\n      <div class=\"col-md-3\">Create Customer Request {{ccr}}</div>\n      <div class=\"col-md-3\">Create Customer  {{cc}}</div>\n      <div class=\"col-md-3\">Save Customer {{sc}}</div>\n      <div class=\"col-md-3 active\">Register Customer {{rc}}</div>\n    </div>\n    <div class=\"row\" *ngSwitchDefault>\n      <div class=\"col-md-3\">Create Customer Request {{ccr}}</div>\n      <div class=\"col-md-3\">Create Customer  {{cc}}</div>\n      <div class=\"col-md-3\">Save Customer {{sc}}</div>\n      <div class=\"col-md-3\">Register Customer {{rc}}</div>\n    </div>\n  </div>\n</div>\n"
+module.exports = "<div class=\"row\">\n  <div class=\"col-md-4\">\n    <button (click)=\"readEvents()\" class=\"btn btn-primary\">Read Event Stream\n    </button>\n  </div>\n  <div class=\"col-md-4\" *ngIf=\"showUnsub\">\n    <button (click)=\"stopEvents()\" class=\"btn btn-danger\">Stop Event Stream\n    </button>\n  </div><div class=\"col-md-4\" [ngClass]=\"{'col-md-offset-4': !showUnsub }\">\n    <button (click)=\"resetCounters()\" class=\"btn btn-info\">Reset counters\n    </button>\n  </div>\n</div>\n\n<div class=\"row\">\n  <div class=\"col-md-3\">\n    Event name:\n  </div>\n  <div class=\"col-md-9\" [ngSwitch]=\"lastEventName\">\n    <div class=\"row\" *ngSwitchCase=\"'CreateCustomerRequestEvent'\">\n      <div class=\"col-md-3 active\">Create Customer Request {{ccr}}</div>\n      <div class=\"col-md-3\">Create Customer {{cc}}</div>\n      <div class=\"col-md-3\">Save Customer {{sc}}</div>\n      <div class=\"col-md-3\">Register Customer {{rc}}</div>\n    </div>\n    <div class=\"row\" *ngSwitchCase=\"'CreateCustomerEvent'\">\n      <div class=\"col-md-3\">Create Customer Request {{ccr}}</div>\n      <div class=\"col-md-3 active\">Create Customer  {{cc}}</div>\n      <div class=\"col-md-3\">Save Customer {{sc}}</div>\n      <div class=\"col-md-3\">Register Customer {{rc}}</div>\n    </div>\n    <div class=\"row\" *ngSwitchCase=\"'SaveCustomerEvent'\">\n      <div class=\"col-md-3\">Create Customer Request {{ccr}}</div>\n      <div class=\"col-md-3\">Create Customer  {{cc}}</div>\n      <div class=\"col-md-3 active\">Save Customer {{sc}}</div>\n      <div class=\"col-md-3\">Register Customer {{rc}}</div>\n    </div>\n    <div class=\"row\" *ngSwitchCase=\"'RegisterCustomerEvent'\">\n      <div class=\"col-md-3\">Create Customer Request {{ccr}}</div>\n      <div class=\"col-md-3\">Create Customer  {{cc}}</div>\n      <div class=\"col-md-3\">Save Customer {{sc}}</div>\n      <div class=\"col-md-3 active\">Register Customer {{rc}}</div>\n    </div>\n    <div class=\"row\" *ngSwitchDefault>\n      <div class=\"col-md-3\">Create Customer Request {{ccr}}</div>\n      <div class=\"col-md-3\">Create Customer  {{cc}}</div>\n      <div class=\"col-md-3\">Save Customer {{sc}}</div>\n      <div class=\"col-md-3\">Register Customer {{rc}}</div>\n    </div>\n  </div>\n</div>\n\n<div class=\"row\">\n  <div class=\"col-md-4 pull-left\">\n    <h4 class=\"list-group-item-heading\">Event</h4>\n    <p class=\"list-group-item-text\">Create Customer Request</p>\n  </div>\n  <div class=\"col-md-8 pull-right\">\n    <h4 class=\"list-group-item-heading\">Properties</h4>\n    <ul class=\"list-group-item-text\">\n      <li *ngFor=\"let item of ccrParams.params | keyvalue\">\n        {{item.key}}:{{item.value}}\n      </li>\n    </ul>\n  </div>\n</div>\n<div class=\"row\">\n  <div class=\"col-md-4 pull-left\">\n    <h4 class=\"list-group-item-heading\">Event</h4>\n    <p class=\"list-group-item-text\">Create Customer</p>\n  </div>\n  <div class=\"col-md-8 pull-right\">\n    <h4 class=\"list-group-item-heading\">Properties</h4>\n    <ul class=\"list-group-item-text\">\n      <li *ngFor=\"let item of ccParams.params | keyvalue\">\n        {{item.key}}:{{item.value}}\n      </li>\n    </ul>\n  </div>\n</div>\n<div class=\"row\">\n  <div class=\"col-md-4 pull-left\">\n    <h4 class=\"list-group-item-heading\">Event</h4>\n    <p class=\"list-group-item-text\">Save Customer</p>\n  </div>\n  <div class=\"col-md-8 pull-right\">\n    <h4 class=\"list-group-item-heading\">Properties</h4>\n    <ul class=\"list-group-item-text\">\n      <li *ngFor=\"let item of scParams.params | keyvalue\">\n        {{item.key}}:{{item.value}}\n      </li>\n    </ul>\n  </div>\n</div>\n<div class=\"row\">\n  <div class=\"col-md-4 pull-left\">\n    <h4 class=\"list-group-item-heading\">Event</h4>\n    <p class=\"list-group-item-text\">Register Customer</p>\n  </div>\n  <div class=\"col-md-8 pull-right\">\n    <h4 class=\"list-group-item-heading\">Properties</h4>\n    <ul class=\"list-group-item-text\">\n      <li *ngFor=\"let item of rcParams.params | keyvalue\">\n        {{item.key}}:{{item.value}}\n      </li>\n    </ul>\n  </div>\n</div>\n"
 
 /***/ }),
 
@@ -324,6 +324,10 @@ var StatsComponent = /** @class */ (function () {
         this.cc = 0;
         this.sc = 0;
         this.rc = 0;
+        this.ccrParams = {};
+        this.ccParams = {};
+        this.scParams = {};
+        this.rcParams = {};
     }
     StatsComponent.prototype.ngOnInit = function () {
         this.showUnsub = false;
@@ -342,22 +346,26 @@ var StatsComponent = /** @class */ (function () {
             next: function (guid) {
                 var responseJson = JSON.parse(guid);
                 _this.lastEventName = responseJson.name;
-                console.log(_this.lastEventName);
+                console.log(responseJson);
                 switch (_this.lastEventName) {
                     case 'CreateCustomerRequestEvent': {
                         _this.ccr += 1;
+                        _this.ccrParams = responseJson.params;
                         break;
                     }
                     case 'CreateCustomerEvent': {
                         _this.cc += 1;
+                        _this.ccParams = responseJson.params;
                         break;
                     }
                     case 'SaveCustomerEvent': {
                         _this.sc += 1;
+                        _this.scParams = responseJson.params;
                         break;
                     }
                     case 'RegisterCustomerEvent': {
                         _this.rc += 1;
+                        _this.rcParams = responseJson.params;
                         break;
                     }
                     default: {
