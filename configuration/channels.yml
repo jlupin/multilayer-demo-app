@@ -1,7 +1,7 @@
 CHANNELS:
   ADM:
     garbageThreadAmount: 4
-    channelTimeOutInMilliseconds: 60000
-    elementTimeOutInMilliseconds: 30000
+    channelTimeOutInMilliseconds: 3600000
+    elementTimeOutInMilliseconds: 60000
     waitTimeBetweenCheckingChannelsInMilliseconds: 5000
     storageClassName: 'com.jlupin.impl.microservice.partofjlupin.asynchronous.storage.channel.impl.memory.JLupinMemoryChannelStorageImpl'

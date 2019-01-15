@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<users>
-    <user expired="false" passwordExpired="false" locked="false" enabled="true" password="$2a$10$QU2JvzR8xX8sb/xm.2s02eaoezWQtpQGMgYQ73JmwVedV.f6kaizi" role="ADMIN" username="admin"/>
-    <user expired="false" passwordExpired="false" locked="false" enabled="true" password="$2a$10$qivGH9BIBRBdVPnvfis34.cl/OZS7PgDqjQm1vCxbTVaTaReR2rAy" role="USER_ADMIN" username="useradmin"/>
-</users>

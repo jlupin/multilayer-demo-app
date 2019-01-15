@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/AccessLayer/admin-gateway-access/implementation/admin-gateway-implementation.iml" filepath="$PROJECT_DIR$/AccessLayer/admin-gateway-access/implementation/admin-gateway-implementation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AccessLayer/api-gateway-access/implementation/api-gateway-implementation.iml" filepath="$PROJECT_DIR$/AccessLayer/api-gateway-access/implementation/api-gateway-implementation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/common-pojo/common-pojo.iml" filepath="$PROJECT_DIR$/common-pojo/common-pojo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/common-util/common-util.iml" filepath="$PROJECT_DIR$/common-util/common-util.iml" />
+      <module fileurl="file://$PROJECT_DIR$/configuration/configuration.iml" filepath="$PROJECT_DIR$/configuration/configuration.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BusinessLogicLayer/customer-bl-business-logic/implementation/customer-bl-business-logic-implementation.iml" filepath="$PROJECT_DIR$/BusinessLogicLayer/customer-bl-business-logic/implementation/customer-bl-business-logic-implementation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BusinessLogicLayer/customer-bl-business-logic/interfaces/customer-bl-business-logic-interfaces.iml" filepath="$PROJECT_DIR$/BusinessLogicLayer/customer-bl-business-logic/interfaces/customer-bl-business-logic-interfaces.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DataLayer/customer-dl-data/implementation/customer-dl-data-implementation.iml" filepath="$PROJECT_DIR$/DataLayer/customer-dl-data/implementation/customer-dl-data-implementation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DataLayer/customer-dl-data/interfaces/customer-dl-data-interfaces.iml" filepath="$PROJECT_DIR$/DataLayer/customer-dl-data/interfaces/customer-dl-data-interfaces.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AccessLayer/demo-app-access/implementation/demo-app-implementation.iml" filepath="$PROJECT_DIR$/AccessLayer/demo-app-access/implementation/demo-app-implementation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/integration-test/integration-test.iml" filepath="$PROJECT_DIR$/integration-test/integration-test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BusinessLogicLayer/ledger-bl-business-logic/implementation/ledger-bl-business-logic-implementation.iml" filepath="$PROJECT_DIR$/BusinessLogicLayer/ledger-bl-business-logic/implementation/ledger-bl-business-logic-implementation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BusinessLogicLayer/ledger-bl-business-logic/interfaces/ledger-bl-business-logic-interfaces.iml" filepath="$PROJECT_DIR$/BusinessLogicLayer/ledger-bl-business-logic/interfaces/ledger-bl-business-logic-interfaces.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DataLayer/ledger-dl-data/implementation/ledger-dl-data-implementation.iml" filepath="$PROJECT_DIR$/DataLayer/ledger-dl-data/implementation/ledger-dl-data-implementation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DataLayer/ledger-dl-data/interfaces/ledger-dl-data-interfaces.iml" filepath="$PROJECT_DIR$/DataLayer/ledger-dl-data/interfaces/ledger-dl-data-interfaces.iml" />
+      <module fileurl="file://$PROJECT_DIR$/multilayer-demo-app.iml" filepath="$PROJECT_DIR$/multilayer-demo-app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BusinessLogicLayer/statistics-business-logic/implementation/statistics-business-logic-implementation.iml" filepath="$PROJECT_DIR$/BusinessLogicLayer/statistics-business-logic/implementation/statistics-business-logic-implementation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BusinessLogicLayer/statistics-business-logic/interfaces/statistics-business-logic-interfaces.iml" filepath="$PROJECT_DIR$/BusinessLogicLayer/statistics-business-logic/interfaces/statistics-business-logic-interfaces.iml" />
+    </modules>
+  </component>
+</project>

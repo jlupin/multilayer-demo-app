@@ -11,6 +11,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Maven: com.jlupin.bnk.demo:common-util:1.0-SNAPSHOT" level="project" />
     <orderEntry type="library" name="Maven: pl.setblack:airomem-core:1.1.0" level="project" />
     <orderEntry type="library" name="Maven: org.prevayler:prevayler-core:2.6" level="project" />
     <orderEntry type="library" name="Maven: org.prevayler:prevayler-factory:2.6" level="project" />
@@ -34,7 +35,7 @@
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.springframework:spring-expression:5.0.8.RELEASE" level="project" />
     <orderEntry type="module" module-name="ledger-dl-data-interfaces" />
     <orderEntry type="library" name="Maven: org.projectlombok:lombok:1.18.4" level="project" />
-    <orderEntry type="library" name="Maven: com.jlupin.bnk.demo:common-util:1.0-SNAPSHOT" level="project" />
+    <orderEntry type="module" module-name="common-util" />
     <orderEntry type="module" module-name="common-pojo" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: com.jlupin:jlupin-client-assembly:1.5.0.3" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.slf4j:slf4j-api:1.8.0-alpha2" level="project" />
