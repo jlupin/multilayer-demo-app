@@ -347,6 +347,7 @@ var StatsComponent = /** @class */ (function () {
                 var responseJson = JSON.parse(guid);
                 _this.lastEventName = responseJson.name;
                 console.log(responseJson);
+                console.log(responseJson.params);
                 switch (_this.lastEventName) {
                     case 'CreateCustomerRequestEvent': {
                         _this.ccr += 1;
