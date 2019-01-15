@@ -45,6 +45,7 @@ export class StatsComponent implements OnInit {
         const responseJson = JSON.parse(guid);
         this.lastEventName = responseJson.name;
         console.log(responseJson)
+        console.log(responseJson.params)
         switch (this.lastEventName) {
           case 'CreateCustomerRequestEvent': {
             this.ccr += 1;
