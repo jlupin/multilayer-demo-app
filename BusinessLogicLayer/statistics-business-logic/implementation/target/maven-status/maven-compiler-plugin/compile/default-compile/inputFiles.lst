@@ -1,7 +1,0 @@
-/home/koziolek/workspace/jlupin/incat-demo/BusinessLogicLayer/statistics-business-logic/implementation/src/main/java/com/jlupin/bnk/demo/service/impl/StatsCollectorServiceImpl.java
-/home/koziolek/workspace/jlupin/incat-demo/BusinessLogicLayer/statistics-business-logic/implementation/src/main/java/com/jlupin/bnk/demo/configuration/StatisticsSpringConfiguration.java
-/home/koziolek/workspace/jlupin/incat-demo/BusinessLogicLayer/statistics-business-logic/implementation/src/main/java/com/jlupin/bnk/demo/dao/pojo/SaveCustomerEvent.java
-/home/koziolek/workspace/jlupin/incat-demo/BusinessLogicLayer/statistics-business-logic/implementation/src/main/java/com/jlupin/bnk/demo/dao/pojo/CreateCustomerEvent.java
-/home/koziolek/workspace/jlupin/incat-demo/BusinessLogicLayer/statistics-business-logic/implementation/src/main/java/com/jlupin/bnk/demo/configuration/StatisticsJLupinConfiguration.java
-/home/koziolek/workspace/jlupin/incat-demo/BusinessLogicLayer/statistics-business-logic/implementation/src/main/java/com/jlupin/bnk/demo/dao/pojo/CreateCustomerRequestEvent.java
-/home/koziolek/workspace/jlupin/incat-demo/BusinessLogicLayer/statistics-business-logic/implementation/src/main/java/com/jlupin/bnk/demo/dao/pojo/RegisterCustomerEvent.java
