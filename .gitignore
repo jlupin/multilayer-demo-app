@@ -1,17 +1,105 @@
-.project
-.settings/
-.classpath
-.idea/
-out/
-target/
-test-output/
-*.zip
-*.odp
-*.pdf
-*.ipr
+# Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio and WebStorm
+# Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
+
+# User-specific stuff
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/**/usage.statistics.xml
+.idea/**/dictionaries
+.idea/**/shelf
+.idea/**/vcs.xml
+.idea/**/sbt.xml
+
+# Generated files
+.idea/**/contentModel.xml
+
+# Sensitive or high-churn files
+.idea/**/dataSources/
+.idea/**/dataSources.ids
+.idea/**/dataSources.local.xml
+.idea/**/sqlDataSources.xml
+.idea/**/dynamic.xml
+.idea/**/uiDesigner.xml
+.idea/**/dbnavigator.xml
+
+# Gradle
+.idea/**/gradle.xml
+.idea/**/libraries
+
+# Gradle and Maven with auto-import
+# When using Gradle or Maven with auto-import, you should exclude module files,
+# since they will be recreated, and may cause churn.  Uncomment if using
+# auto-import.
+# .idea/modules.xml
+# .idea/*.iml
+# .idea/modules
+
+# CMake
+cmake-build-*/
+
+# Mongo Explorer plugin
+.idea/**/mongoSettings.xml
+
+# File-based project format
 *.iws
-*.iml
-*.jar
-*.class
-server/
-dependency-reduced-pom.xml
+
+# IntelliJ
+out/
+
+# mpeltonen/sbt-idea plugin
+.idea_modules/
+
+# JIRA plugin
+atlassian-ide-plugin.xml
+
+# Cursive Clojure plugin
+.idea/replstate.xml
+
+# Crashlytics plugin (for Android Studio and IntelliJ)
+com_crashlytics_export_strings.xml
+crashlytics.properties
+crashlytics-build.properties
+fabric.properties
+
+# Editor-based Rest Client
+.idea/httpRequests
+
+# Android studio 3.1+ serialized cache file
+.idea/caches/build_file_checksums.ser
+
+**/target/
+**/pom.xml.tag
+**/pom.xml.releaseBackup
+**/pom.xml.versionsBackup
+**/pom.xml.next
+**/release.properties
+**/dependency-reduced-pom.xml
+**/buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
+# Platform
+platform/application/
+!platform/application/channelMicroservice
+!platform/application/queueMicroservice
+!platform/application/webcontrol
+platform/logs/
+platform/technical/nginx/linux/logs/
+platform/technical/nginx/windows/logs/
+platform/start/temp/
+platform/temp/
+platform/start/control/data/control.history
+platform/storage/
+
+# Platform 2
+platform-2/application/
+!platform-2/application/channelMicroservice
+!platform-2/application/queueMicroservice
+!platform-2/application/webcontrol
+platform-2/logs/
+platform-2/technical/nginx/linux/logs/
+platform-2/technical/nginx/windows/logs/
+platform-2/start/temp/
+platform-2/temp/
+platform-2/start/control/data/control.history
+platform-2/storage/

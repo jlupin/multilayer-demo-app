@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="admin-gateway-implementation" />
+        <module name="api-gateway-implementation" />
+        <module name="common-pojo" />
+        <module name="common-util" />
+        <module name="configuration" />
+        <module name="customer-bl-business-logic-implementation" />
+        <module name="customer-bl-business-logic-interfaces" />
+        <module name="customer-dl-data-implementation" />
+        <module name="customer-dl-data-interfaces" />
+        <module name="demo-app-implementation" />
+        <module name="integration-test" />
+        <module name="ledger-bl-business-logic-implementation" />
+        <module name="ledger-bl-business-logic-interfaces" />
+        <module name="ledger-dl-data-implementation" />
+        <module name="ledger-dl-data-interfaces" />
+        <module name="statistics-business-logic-implementation" />
+        <module name="statistics-business-logic-interfaces" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="admin-gateway-implementation" target="1.8" />
+      <module name="api-gateway-implementation" target="1.8" />
+      <module name="bnk-demo" target="1.8" />
+      <module name="common-pojo" target="1.8" />
+      <module name="common-util" target="1.8" />
+      <module name="configuration" target="1.8" />
+      <module name="customer-bl-business-logic-implementation" target="1.8" />
+      <module name="customer-bl-business-logic-interfaces" target="1.8" />
+      <module name="customer-dl-data-implementation" target="1.8" />
+      <module name="customer-dl-data-interfaces" target="1.8" />
+      <module name="demo-app-implementation" target="1.8" />
+      <module name="integration-test" target="1.8" />
+      <module name="ledger-bl-business-logic-implementation" target="1.8" />
+      <module name="ledger-bl-business-logic-interfaces" target="1.8" />
+      <module name="ledger-dl-data-implementation" target="1.8" />
+      <module name="ledger-dl-data-interfaces" target="1.8" />
+      <module name="multilayer-demo-app" target="1.8" />
+      <module name="statistics-business-logic-implementation" target="1.8" />
+      <module name="statistics-business-logic-interfaces" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="admin-gateway-implementation" options="-parameters" />
+      <module name="api-gateway-implementation" options="-parameters" />
+      <module name="demo-app-implementation" options="-parameters" />
+    </option>
+  </component>
+</project>
