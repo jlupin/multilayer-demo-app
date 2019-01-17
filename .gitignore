@@ -1,0 +1,17 @@
+.project
+.settings/
+.classpath
+.idea/
+out/
+target/
+test-output/
+*.zip
+*.odp
+*.pdf
+*.ipr
+*.iws
+*.iml
+*.jar
+*.class
+server/
+dependency-reduced-pom.xml
