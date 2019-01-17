@@ -1,7 +1,5 @@
 package com.jlupin.bnk.demo.service.impl;
 
-import com.jlupin.impl.client.util.channel.JLupinClientChannelUtil;
-import com.jlupin.impl.client.util.channel.exception.JLupinClientChannelUtilException;
 import com.jlupin.bnk.demo.common.util.Zamulator;
 import com.jlupin.bnk.demo.dao.pojo.CreateCustomerEvent;
 import com.jlupin.bnk.demo.dao.pojo.CreateCustomerRequestEvent;
@@ -9,6 +7,8 @@ import com.jlupin.bnk.demo.dao.pojo.RegisterCustomerEvent;
 import com.jlupin.bnk.demo.dao.pojo.SaveCustomerEvent;
 import com.jlupin.bnk.demo.service.interfaces.StatsCollectorService;
 import com.jlupin.bnk.demo.service.pojo.EventView;
+import com.jlupin.impl.client.util.channel.JLupinClientChannelUtil;
+import com.jlupin.impl.client.util.channel.exception.JLupinClientChannelUtilException;
 import com.jlupin.interfaces.microservice.partofjlupin.asynchronous.storage.channel.status.type.JLupinStreamChannelStatusType;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
@@ -45,40 +45,40 @@ public class StatsCollectorServiceImpl implements StatsCollectorService, Seriali
 		this.zamulator = zamulator;
 		this.executorService = executorService;
 		this.jLupinClientChannelUtil = jLupinClientChannelUtil;
-		// TODO zmienić na strukturę bez emisji.
-		// Pani Liskov wyraża się niepochleblnie o tym kodzie
-		this.eventViews = new LinkedList<EventView>() {
-			@Override
-			public boolean add(EventView o) {
-				emitForAll(o);
-				return super.add(o);
-			}
-		}; // no z bezpieczeństwem wątków to jest nie do końca OK.
+		this.eventViews = new LinkedList<>();
 		this.channelStreams = new HashSet<>();
 	}
 
 	@Override
 	public void createCustomerRequest(UUID systemId, String login, String type) {
 		CreateCustomerRequestEvent ccre = new CreateCustomerRequestEvent(systemId, login, type);
-		eventViews.add(new EventView(ccre.getClass().getSimpleName(), ccreToMap(ccre)));
+		EventView e = new EventView(ccre.getClass().getSimpleName(), ccreToMap(ccre));
+		eventViews.add(e);
+		emitForAll(e);
 	}
 
 	@Override
 	public void createCustomer(UUID requestId, String login, String type) {
 		CreateCustomerEvent cce = new CreateCustomerEvent(requestId, login, type);
-		eventViews.add(new EventView(cce.getClass().getSimpleName(), cceToMap(cce)));
+		EventView e = new EventView(cce.getClass().getSimpleName(), cceToMap(cce));
+		eventViews.add(e);
+		emitForAll(e);
 	}
 
 	@Override
 	public void saveCustomer(UUID systemId, UUID createId, String login) {
 		SaveCustomerEvent sce = new SaveCustomerEvent(systemId, createId, login);
-		eventViews.add(new EventView(sce.getClass().getSimpleName(), sceToMap(sce)));
+		EventView e = new EventView(sce.getClass().getSimpleName(), sceToMap(sce));
+		eventViews.add(e);
+		emitForAll(e);
 	}
 
 	@Override
 	public boolean registerCustomer(UUID systemId, String type) {
 		RegisterCustomerEvent rce = new RegisterCustomerEvent(systemId, type);
-		return eventViews.add(new EventView(rce.getClass().getSimpleName(), rceToMap(rce)));
+		EventView e = new EventView(rce.getClass().getSimpleName(), rceToMap(rce));
+		emitForAll(e);
+		return eventViews.add(e);
 	}
 
 	@Override

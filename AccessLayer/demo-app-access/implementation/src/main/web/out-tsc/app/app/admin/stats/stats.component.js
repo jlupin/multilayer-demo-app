@@ -8,6 +8,10 @@ var StatsComponent = /** @class */ (function () {
         this.cc = 0;
         this.sc = 0;
         this.rc = 0;
+        this.ccrParams = {};
+        this.ccParams = {};
+        this.scParams = {};
+        this.rcParams = {};
     }
     StatsComponent.prototype.ngOnInit = function () {
         this.showUnsub = false;
@@ -26,22 +30,27 @@ var StatsComponent = /** @class */ (function () {
             next: function (guid) {
                 var responseJson = JSON.parse(guid);
                 _this.lastEventName = responseJson.name;
-                console.log(_this.lastEventName);
+                console.log(responseJson);
+                console.log(responseJson.params);
                 switch (_this.lastEventName) {
                     case 'CreateCustomerRequestEvent': {
                         _this.ccr += 1;
+                        _this.ccrParams = responseJson.params;
                         break;
                     }
                     case 'CreateCustomerEvent': {
                         _this.cc += 1;
+                        _this.ccParams = responseJson.params;
                         break;
                     }
                     case 'SaveCustomerEvent': {
                         _this.sc += 1;
+                        _this.scParams = responseJson.params;
                         break;
                     }
                     case 'RegisterCustomerEvent': {
                         _this.rc += 1;
+                        _this.rcParams = responseJson.params;
                         break;
                     }
                     default: {

@@ -13,7 +13,10 @@ export class StatsComponent implements OnInit {
   cc = 0;
   sc = 0;
   rc = 0;
-
+  ccrParams: { [key: string]: string } = {};
+  ccParams: { [key: string]: string } = {};
+  scParams: { [key: string]: string } = {};
+  rcParams: { [key: string]: string } = {};
   private channel: Observable<any>;
   private activeSubscription: Subscription;
   private showUnsub: boolean;
@@ -41,22 +44,27 @@ export class StatsComponent implements OnInit {
       next: guid => {
         const responseJson = JSON.parse(guid);
         this.lastEventName = responseJson.name;
-        console.log(this.lastEventName);
+        console.log(responseJson)
+        console.log(responseJson.params)
         switch (this.lastEventName) {
           case 'CreateCustomerRequestEvent': {
             this.ccr += 1;
+            this.ccrParams = responseJson.params;
             break;
           }
           case 'CreateCustomerEvent': {
             this.cc += 1;
+            this.ccParams = responseJson.params;
             break;
           }
           case 'SaveCustomerEvent': {
             this.sc += 1;
+            this.scParams = responseJson.params;
             break;
           }
           case 'RegisterCustomerEvent': {
             this.rc += 1;
+            this.rcParams = responseJson.params;
             break;
           }
           default: {

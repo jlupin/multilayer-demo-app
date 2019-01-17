@@ -49,3 +49,60 @@
     </div>
   </div>
 </div>
+
+<div class="row">
+  <div class="col-md-4 pull-left">
+    <h4 class="list-group-item-heading">Event</h4>
+    <p class="list-group-item-text">Create Customer Request</p>
+  </div>
+  <div class="col-md-8 pull-right">
+    <h4 class="list-group-item-heading">Properties</h4>
+    <ul class="list-group-item-text">
+      <li *ngFor="let item of ccrParams.params | keyvalue">
+        {{item.key}}:{{item.value}}
+      </li>
+    </ul>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-4 pull-left">
+    <h4 class="list-group-item-heading">Event</h4>
+    <p class="list-group-item-text">Create Customer</p>
+  </div>
+  <div class="col-md-8 pull-right">
+    <h4 class="list-group-item-heading">Properties</h4>
+    <ul class="list-group-item-text">
+      <li *ngFor="let item of ccParams.params | keyvalue">
+        {{item.key}}:{{item.value}}
+      </li>
+    </ul>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-4 pull-left">
+    <h4 class="list-group-item-heading">Event</h4>
+    <p class="list-group-item-text">Save Customer</p>
+  </div>
+  <div class="col-md-8 pull-right">
+    <h4 class="list-group-item-heading">Properties</h4>
+    <ul class="list-group-item-text">
+      <li *ngFor="let item of scParams.params | keyvalue">
+        {{item.key}}:{{item.value}}
+      </li>
+    </ul>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-4 pull-left">
+    <h4 class="list-group-item-heading">Event</h4>
+    <p class="list-group-item-text">Register Customer</p>
+  </div>
+  <div class="col-md-8 pull-right">
+    <h4 class="list-group-item-heading">Properties</h4>
+    <ul class="list-group-item-text">
+      <li *ngFor="let item of rcParams.params | keyvalue">
+        {{item.key}}:{{item.value}}
+      </li>
+    </ul>
+  </div>
+</div>
